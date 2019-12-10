@@ -1,0 +1,193 @@
+/*
+
+write your code here
+
+*/
+@media print {
+    .tm-sidebar, .tm-team-img, #about, .gallery-container, .carousel-indicators, .carousel-item, #ideas + section {
+        display: none;
+    }
+
+    .tm-team-description-container {
+        text-align: center;
+        max-width: 100%;
+    }
+
+    section, .tm-content-box div, .padding-medium, #heading {
+        margin: 0;
+        padding: 0;
+    }
+
+    .tm-main-content {
+        padding: 0 2em 0 2em;
+    }
+
+    .tm-content-box div p {
+        margin: auto;
+    }
+
+    .carousel {
+        padding: 0;
+        text-align:left;
+    }
+
+    .heading {
+        text-align: center;
+    }
+
+    .tm-team-description-container .tm-section-description {
+        margin-bottom: 1em;
+    }
+
+    .heading .padding-medium ol {
+        list-style-type: none;
+        padding: 0 10em 0 10em;
+    }
+
+    .heading .padding-medium ol li:nth-child(2n) {
+        text-align: left;
+    }
+
+    .heading .padding-medium ol li:nth-child(2n+1) {
+        text-align: right;
+    }
+
+    .blocks .tm-team-description-container .tm-section-description:nth-child(3) {
+        font-style: italic;
+        word-spacing: 10px;
+        letter-spacing: 4px;
+    }
+}
+@media screen {
+    .tm-nav-item:hover {
+        background-color: lightskyblue;
+        color: #fff;
+    }
+    .tm-banner {
+        background: linear-gradient(lightskyblue, burlywood);
+    }
+    .tm-banner-inner {
+        background-color: white;
+    }
+    .tm-banner-text {
+        position: relative;
+        text-shadow: 3px 3px 2px #333;
+        animation-name: tm-banner-text;
+        animation-direction: normal;
+        animation-timing-function: ease-out;
+        animation-iteration-count: 1;
+        animation-duration: 2.5s;
+        animation-play-state: running;
+    }
+    @keyframes tm-banner-text {
+        from {
+            right: 200px;
+        }
+        to {
+            right: 0;
+        }
+    }
+    .flex-2-col {
+        display: flex;
+        flex-direction: row;
+    }
+    .flex-2-col .flex-item{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .flex-item, .carousel-content{text-align: center;}
+    .tm-box-bg-title:hover {
+        color: lightskyblue;
+        background-color: lightgrey;
+    }
+    .heading .padding-medium h2 {text-align: center;}
+    .heading .padding-medium ol {list-style: lower-alpha;}
+    .heading .padding-medium ol li:hover::before {
+        content: ">";
+        font-weight: bold;
+    }
+    .heading .padding-medium ol li:nth-child(-2n+3)::after {
+        content: "New";
+        font-weight: bold;
+        vertical-align: super;
+        font-size: 12px;
+        color: red;
+    }
+    .tm-section-title-box{max-width:100%}
+    .blocks .tm-team-description-container .tm-section-description, .blocks .tm-team-description-container h2.tm-section-title{
+        text-align: left;
+        max-width: 45%;
+    }
+    .tm-section-description {text-indent: 2em;}
+    .blocks .tm-team-description-container .tm-section-description:nth-child(3) {
+        font-style: italic;
+        word-spacing: 10px;
+        letter-spacing: 4px;
+    }
+    .gallery-container .box-work {padding: 0.5em;}
+    .gallery-container .box-work:nth-child(odd) {
+        padding: 0.5em;
+        color: white;
+        background-color: lightskyblue;
+    }
+    .gallery-container .box-work:nth-child(odd) {padding: 0.5em;}
+    .box-work div p:first-letter {font-weight: bold;}
+    .box-work div p {font-style: italic;}
+    .tm-section-description {
+        padding: 25px;
+        line-height: 30px;
+    }
+    .tm-team-description-container, .carousel-content{max-width: 100%;}
+    .tm-content-box, section.blocks, .tm-sidebar{
+        box-shadow: 3px 3px 7px rgba(61, 55, 61, 0.7);
+        max-width: 100%;
+    }
+    .form-control {
+        border-width: 0 0 1px 0;
+        border-color: lightskyblue;
+    }
+    #contact_name:focus, #contact_email:focus, #contact_subject:focus {
+        background-color: lightskyblue;
+    }
+    #contact_message {
+        background-image: url("../img/email-icon.png");
+        background-color: white;
+        background-repeat: no-repeat;
+        background-position-x: 99%;
+        background-position-y: 95%;
+        background-size: 32px;
+        border-width: 1px;
+    }
+    .contact-form .btn-primary {
+        padding: 1em;
+        background-color: white;
+        color: lightskyblue;
+        border-color: lightskyblue;
+        float: right;
+    }
+    .contact-form .btn-primary:active {
+        background-color: lightskyblue;
+    }
+    section.blocks::before, section.tm-content-box::before, .carousel::before, .flex-2-col:first-child::before{
+        content:'';
+        position:absolute;
+        width:0;
+        height:0;
+        border-top: 50px lightskyblue solid;
+        border-right: 50px solid transparent;
+        border-left-width: 0;
+        border-bottom-width: 0;
+    }
+    .carousel {
+        padding:0 0 1em 0;
+        text-align:left;
+    }
+    .carousel h2{
+        padding-top: 50px;
+    }
+    .carousel-indicators{
+        margin-top:50px;
+        bottom:-0.5em;
+    }
+}
