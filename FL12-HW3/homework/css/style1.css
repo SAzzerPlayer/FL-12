@@ -1,0 +1,163 @@
+.header div p.header_heading::selection, .section .section_text::selection, .section_banner .section_banner_text_wrap .section_banner_heading::selection {
+  background-color: lightskyblue;
+  color: black; }
+
+body {
+  background: #fff;
+  font-family: 'Source Sans Pro', sans-serif; }
+
+main {
+  width: 960px;
+  margin: 0 auto; }
+
+button {
+  float: left;
+  color: white;
+  display: block;
+  width: 100px;
+  height: 40px;
+  background: #699900;
+  font-weight: bold;
+  border-width: 0;
+  border-radius: 3px; }
+
+.header {
+  background-image: url("../img/m-h-day.jpg");
+  padding: 1em 2em 2em 2em;
+  border-radius: 0 0 450px/225px 0;
+  color: black; }
+  .header div p.header_heading {
+    width: 400px;
+    font-size: 56px;
+    font-weight: bold;
+    margin-bottom: 36px;
+    margin-top: 36px; }
+  .header div p.header_heading {
+    width: 400px;
+    font-size: 56px;
+    font-weight: bold; }
+  .header div p.header_text {
+    width: 650px;
+    position: relative;
+    white-space: pre-line;
+    line-height: 25px;
+    margin-bottom: 60px; }
+  .header p.header_text + div {
+    width: 400px;
+    position: relative;
+    margin-bottom: 200px; }
+    .header p.header_text + div a {
+      float: right;
+      color: white;
+      margin-top: 5px; }
+
+.landing-logo {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 165px;
+  height: 48px; }
+  .landing-logo img {
+    display: flex;
+    flex: 0.5;
+    width: 50px;
+    max-width: 48px;
+    max-height: 48px; }
+  .landing-logo p {
+    margin-left: 5px;
+    display: flex;
+    flex-direction: column;
+    flex: 0.5;
+    width: 100px;
+    font-size: 22px;
+    font-weight: bold;
+    word-wrap: break-word;
+    justify-content: center;
+    text-align: center;
+    color: black; }
+    .landing-logo p span:before {
+      content: "\a         "; }
+    .landing-logo p span {
+      flex: 0.5;
+      font-size: 12px; }
+
+.section {
+  position: relative;
+  padding: 16px; }
+  .section .section_text {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: black; }
+  .section .section_card {
+    background-color: #21232e;
+    margin: 15px;
+    padding: 15px;
+    display: flex;
+    height: 225px;
+    justify-content: space-between;
+    color: white; }
+    .section .section_card img {
+      display: flex;
+      border-radius: 4px;
+      flex: 0.35;
+      max-width: 350px; }
+    .section .section_card div {
+      display: flex;
+      flex-direction: column;
+      padding-top: 15px;
+      flex: 0.65; }
+      .section .section_card div .section_card_heading {
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold; }
+      .section .section_card div .section_card_text {
+        font-size: 16px;
+        word-spacing: 1px;
+        padding-left: 70px;
+        padding-right: 60px; }
+      .section .section_card div .section_link {
+        margin-top: 10px;
+        text-align: center;
+        color: white; }
+
+.section_banner {
+  background: linear-gradient(90deg, #649415 20%, #305fcd 79%);
+  padding: 10px 80px 10px 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; }
+  .section_banner .section_banner_text_wrap .section_banner_heading {
+    font-size: 20px;
+    color: black;
+    word-spacing: 4px;
+    font-weight: bold; }
+  .section_banner .section_banner_text_wrap .section_banner_text {
+    font-size: 16px;
+    color: white; }
+
+footer {
+  height: 150px;
+  background-color: #21232e;
+  align-items: center;
+  position: relative;
+  color: white;
+  padding: 1em 4em 2em 4em; }
+  footer .footer-wrap {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; }
+    footer .footer-wrap div {
+      display: flex;
+      flex: 0.3; }
+    footer .footer-wrap p {
+      display: flex;
+      word-spacing: 2px;
+      flex: 0.3; }
+    footer .footer-wrap span.footer_cr {
+      flex: 0.3;
+      display: flex;
+      text-align: right; }
