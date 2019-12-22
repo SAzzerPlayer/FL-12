@@ -1,0 +1,447 @@
+/*
+ * Feel free to change name of colors if you need it
+ * Feel free to add new colors if you need it
+ */
+body {
+  font-family: roboto;
+}
+.post-1 {
+	background: #9d27b0;
+}
+.post-2 {
+	background: #9bb800;
+}
+.post-3 {
+	background: #ed5120;
+}
+.post-4 {
+	background: #9d27b0;
+}
+.post-5 {
+	background: #2d95bb;
+}
+/* Your styles go here */
+body {
+    background-color: #0b192f;
+    display: grid;
+    grid-template-columns: auto 1024px auto;
+    grid-template-rows: 60px auto 100px;
+    grid-template-areas: ". header ." ". main ." ". footer .";
+    grid-row-gap: 1em;
+    color: #ffffff;
+}
+
+header {
+    grid-area: header;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #1f52a4;
+}
+
+.logo {
+    display: flex;
+    font-size: 24px;
+    align-items: center;
+    margin: 0 0 0 1em;
+}
+
+.logo-title {
+    color: #ed5120;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 50%;
+    min-width: 20%;
+    padding: 0 2em 0 2em;
+}
+
+nav a {
+    display: block;
+    color: #fff;
+    padding: 1em 1em 1em 1em;
+    line-height: 100%;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #2d95bb;
+}
+
+main {
+    grid-area: main;
+}
+
+.welcome-card {
+    width: 100%;
+    min-height:384px;
+    max-height:480px;
+    background-repeat: round;
+    background-size: contain;
+    background-image: url("../img/post0.jpg");
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-bottom: 1em;
+}
+
+.table {
+    display: grid;
+    grid-template-columns: 70% auto;
+    grid-template-rows: auto;
+    grid-template-areas: "cards news";
+    grid-column-gap: 1em;
+}
+
+.cards {
+    grid-area: cards;
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 256px;
+    cursor: pointer;
+}
+
+.card-description {
+    display: flex;
+    flex-direction: column;
+    padding: 2em 2em 2em 2em;
+}
+
+.cards .card:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.cards .card:nth-child(odd) .card-description {
+    text-align: left;
+    padding: 2em 0.5em 2em 2em;
+}
+
+.cards .card:nth-child(even) .card-description {
+    text-align: right;
+    padding: 2em 2em 2em 0.5em;
+}
+
+.card-title {
+    font-size: 36px;
+    margin: 0 0 0 0;
+    font-weight: lighter;
+}
+
+.card-text, .news-text {
+    font-size: 14px;
+    line-height: 1.5em;
+}
+
+.card img {
+    flex: 0.5;
+    width: 50%;
+    height: 100%;
+}
+
+.card-date {
+    width: 5%;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    text-align: center;
+    font-weight: lighter;
+    align-self: flex-start;
+    opacity: 0.5;
+}
+
+.date-number {
+    font-size: 32px;
+}
+
+.date-day {
+    font-size: 16px;
+}
+
+.news {
+    grid-area: news;
+    display: flex;
+    flex-direction: column;
+}
+
+.news-div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+    background-color: white;
+    color: #000;
+}
+
+.news-div img {
+    height: 45%;
+    width: 100%;
+}
+
+.news-description {
+    display: flex;
+    flex-direction: column;
+    padding: 2em 2em 2em 2em;
+}
+
+.news-title {
+    font-size: 28px;
+    margin: 0 0 0 0;
+    line-height: 1em;
+    font-weight: lighter;
+}
+
+footer {
+    grid-area: footer;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    background-color: #1f52a4;
+}
+
+.footer-left {
+    padding: 2em 2em 2em 2em;
+    opacity: 0.5;
+}
+
+.footer-right {
+    padding: 2em 2em 2em 2em;
+    opacity: 0.5;
+}
+
+.post-1:hover {
+    background: linear-gradient(45deg, #9d27b0, #9d27b0), #9d27b0;
+    background-blend-mode: lighten;
+    opacity: 0.75;
+}
+
+.post-2:hover {
+    background: linear-gradient(45deg, #9bb800, #9bb800), #9bb800;
+    background-blend-mode: lighten;
+    opacity: 0.75;
+}
+
+.post-3:hover {
+    background: linear-gradient(45deg, #ed5120, #ed5120), #ed5120;
+    background-blend-mode: lighten;
+    opacity: 0.75;
+}
+
+.post-4:hover {
+    background: linear-gradient(45deg, #9d27b0, #9d27b0), #9d27b0;
+    background-blend-mode: lighten;
+    opacity: 0.75;
+}
+
+.post-5:hover {
+    background: linear-gradient(45deg, #2d95bb, #2d95bb), #2d95bb;
+    background-blend-mode: lighten;
+    opacity: 0.75;
+}
+
+@media (max-width:1440px){
+    body{
+        grid-template-columns: auto 1024px auto ;
+        grid-template-rows: 60px auto 100px;
+        grid-template-areas: ". header ." ". main ." ". footer .";
+    }
+    header{
+        display: flex;
+    }
+    #menu-button{
+        display: none;
+        cursor: pointer;
+    }
+}
+@media (max-width:768px){
+    body{
+        grid-template-columns: 1em auto 480px auto 1em ;
+        grid-template-rows: auto 100px auto 150px;
+        grid-template-areas: ". header header header ." ". header header header ." ". main main main ." ". footer footer footer.";
+    }
+    header{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    .logo{
+        margin: 0;
+    }
+    .welcome-card {
+        min-height:240px;
+        max-height:480px;
+    }
+    header nav{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    header nav a{
+        line-height: normal;
+    }
+    header nav:hover{
+        display:flex;
+    }
+    #menu-button{
+        display: flex;
+        cursor: pointer;
+    }
+    #menu-button:active~nav, #menu-button:active{
+        display:flex;
+    }
+    .table{
+        grid-template-columns: 60% auto;
+    }
+    .cards .card:nth-child(odd){
+        flex-direction: column;
+        height: 100%;
+    }
+    .cards .card:nth-child(even){
+        flex-direction: column;
+        height: 100%;
+    }
+    .cards .card:nth-child(odd) .card-description {
+        text-align: left;
+        padding: 2em 2em 0 2em;
+    }
+
+    .cards .card:nth-child(even) .card-description {
+        text-align: left;
+        padding: 2em 2em 0 2em;
+    }
+    .card img{
+        height:60%;
+        width:100%;
+    }
+    .card-date{
+        width: 100%;
+    }
+    .news-div {
+        min-height: 15%;
+        max-height: 25%;
+    }
+    .news-div img {
+        min-height: 25%;
+        max-height: 30%;
+        width: 100%;
+    }
+    footer {
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-left, .footer-right {
+        text-align: center;
+        padding: 0;
+    }
+    .footer-left, .footer-right  p{
+        margin: 0;
+    }
+}
+@media (max-width:480px){
+    body{
+        grid-template-columns: 1em auto 320px auto 1em;
+        grid-template-rows: auto 100px auto 150px;
+        grid-template-areas: ". header header header ." ". header header header ." ". main main main ." ". footer footer footer.";
+    }
+    header{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    .logo{
+        margin: 0 0 0 0;
+    }
+    .welcome-card {
+        min-height:200px;
+        max-height:480px;
+        background-repeat: no-repeat;
+        background-size: auto auto;
+    }
+    header nav{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    header nav a{
+        line-height: normal;
+    }
+    header nav:hover{
+        display:flex;
+    }
+    #menu-button{
+        display: flex;
+        cursor: pointer;
+    }
+    #menu-button:active~nav, #menu-button:active{
+        display:flex;
+    }
+
+    .table{
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        grid-template-areas: "cards" "news"
+    }
+    .cards .card:nth-child(odd){
+        flex-direction: column;
+        height: 100%;
+    }
+    .cards .card:nth-child(even){
+        flex-direction: column;
+        height: 100%;
+    }
+    .cards .card:nth-child(odd) .card-description {
+        text-align: left;
+        padding: 2em 2em 0 2em;
+    }
+
+    .cards .card:nth-child(even) .card-description {
+        text-align: left;
+        padding: 2em 2em 0 2em;
+    }
+    .card img{
+        height:60%;
+        width:100%;
+    }
+    .card-date{
+        width: 100%;
+    }
+    .news-div {
+        min-height: 15%;
+        max-height: 25%;
+    }
+    .news-div img {
+        min-height: 25%;
+        max-height: 30%;
+        width: 100%;
+    }
+    footer {
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-left, .footer-right {
+        text-align: center;
+        padding: 0;
+    }
+    .footer-left, .footer-right  p{
+        margin: 0;
+    }
+}
+
