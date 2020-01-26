@@ -1,0 +1,37 @@
+/* Todo: your styles go here*/
+body{
+    display: grid;
+    grid-template-columns: auto 800px auto;
+    grid-template-rows: 50px auto;
+    grid-template-areas: '. . .' '. root .';
+}
+#root{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width:800px;
+    grid-area: root;
+}
+.children{
+    margin-left: 1em;
+}
+.info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.info:hover{
+    cursor: pointer;
+    background-color: #C4C3C3;
+}
+.empty-children{
+    margin-left: 0.5em;
+    font-style: italic;
+}
+
+.folder .info .material-icons{
+    color: yellow;
+}
+.file .info .material-icons{
+    color: lightgray;
+}
