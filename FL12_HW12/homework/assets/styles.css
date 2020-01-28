@@ -1,0 +1,130 @@
+/* Your styles go here */
+body{
+    display: grid;
+    grid-template-columns: auto 750px auto;
+    grid-template-rows: 25px auto;
+    grid-template-areas: ' . . . ' '. root .';
+}
+#root{
+    grid-area: root;
+    background-color: skyblue;
+    height: auto;
+}
+ header{
+    width:750px;
+    height:80px;
+    display:flex;
+    background: linear-gradient(to bottom, rgba(147,206,222,1) 0%, rgba(117,189,209,1) 52%, rgba(25,157,194,1) 100%);
+    box-shadow: 1px 3px 5px 0 rgba(0,0,0,0.75);
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+ header div{
+    width:100px;
+    height:25px;
+}
+.mybutton{
+    width:100px;
+    height:50px;
+    border-radius:8px;
+    background: linear-gradient(to bottom, rgba(241,231,103,1) 0%, rgba(254,182,69,1) 100%);
+    box-shadow: 1px 3px 5px 0 rgba(0,0,0,0.75);
+    text-align: center;
+    font-size: 20px;
+    text-decoration: none;
+}
+.title{
+    font-size: 28px;
+    font-weight: bold;
+    color: snow;
+}
+main{
+    margin: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+/*list page*/
+.card-set{
+    width:600px;
+    background: radial-gradient(ellipse at center, rgba(241,231,103,1) 0%, rgba(252,242,133,1) 100%);
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 24px;
+    box-shadow: 1px 3px 5px 0 rgba(0,0,0,0.75);
+    margin-bottom: 1em;
+}
+
+.card-header{
+    padding: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.card-title{
+    font-size:20px;
+    font-weight: bold;
+}
+.card-edit{
+    width:80px;
+    height:25px;
+    border-radius: 4px;
+    background: linear-gradient(to bottom, rgba(241,231,103,1) 0%, rgba(254,182,69,1) 100%);
+    box-shadow: 1px 3px 5px 0 rgba(0,0,0,0.75);
+    text-align:center;
+    font-size:16px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.card-buttons{
+    width:200px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card-inner{
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.term-block{
+    margin-bottom: 1em;
+    display: flex;
+    width: 500px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.term-desc, .term-definition{
+    font-size: 16px;
+    font-weight: bold;
+    max-width:200px;
+}
+/*adding page*/
+#term-title div{
+    width:30px;
+    height:30px;
+}
+#term-title{
+    padding:1em;
+    display: flex;
+    width: 600px;
+    justify-content: space-between;
+}
+#term-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.term{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width:500px;
+    margin-bottom:1em;
+}
